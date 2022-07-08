@@ -1,0 +1,9 @@
+.btn {
+  margin-right: "0.5rem";
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  cursor: 'pointer';
+  transform: scale(1.2);
+}
