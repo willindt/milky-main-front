@@ -97,11 +97,11 @@ const Swap = () => {
 	const capitalize = (string: string | null): string => {
 		return string === null ? '' : string.charAt(0).toUpperCase() + string.slice(1);
 	}
-	
+
 	const tab = searchParams.get('tab') != null ? (capitalize(searchParams.get('tab')) as OPTION_TYPE) : OPTION_TYPE.SWAP
 	const pair1 = searchParams.get('pair1') != null ? (searchParams.get('pair1') as TOKEN_TYPE) : 'default'
 	const pair2 = searchParams.get('pair2') ? (searchParams.get('pair2') as TOKEN_TYPE) : 'default'
-	
+
 	const connect = useCallback(async function () {
 		// This is the initial `provider` that is returned when
 		// using web3Modal to connect. Can be MetaMask or WalletConnect.
